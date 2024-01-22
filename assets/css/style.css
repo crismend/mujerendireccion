@@ -467,10 +467,6 @@ footer .line {
 /* tablets */
 @media(max-width: 991px){
 
-    .logo-init h5{
-        
-    }
-
     .text-header{
         font-size: 2rem;
     }
