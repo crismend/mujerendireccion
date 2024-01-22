@@ -83,6 +83,11 @@ img {
 
 /* NAVBAR */
 
+.logo-init{
+    display: flex;
+    align-items: center;
+}
+
 .top-nav {
     background-color: var(--c-brand);
     color: #fff;
@@ -452,7 +457,7 @@ footer .line {
 }
 
 .img-logo {
-    width: 4rem;
+    width: 4.8rem;
     margin-right: 10px;
 }
 
@@ -461,13 +466,23 @@ footer .line {
 
 /* tablets */
 @media(max-width: 991px){
+
+    .logo-init h5{
+        
+    }
+
     .text-header{
         font-size: 2rem;
-        
     }
 
     .section-padding {
         padding-top: 140px;
         padding-bottom: 80px;
+    }
+}
+
+@media(max-width: 1024px){
+    .logo-init h5{
+        font-size: 1rem;
     }
 }
