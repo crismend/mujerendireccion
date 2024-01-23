@@ -57,7 +57,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#hero">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -402,17 +402,17 @@
                         <!-- <div class="line"></div> -->
                         <div class="col-lg-6">
                             <h6>Jueves:</h6>
-                            <h6>5:00 am - 6:am</h6>
-                            <hr>
-                            <h5>Intercesion y Oracion</h5>
-                            <p>Somos ungrupo de Mujeres apasionadas por la Oración</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <h6>Viernes:</h6>
-                            <h6>7:00 pm a 8:30 pm</h6>
+                            <h6>7:00 pm - 8:30 pm</h6>
                             <hr>
                             <h5>Estudios, talleres y conferencias</h5>
                             <p>Aprenderemos a ser mejores personas y a tener una mejor relacion con Dios.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6>Viernes:</h6>
+                            <h6>5:00 am a 6:00 am</h6>
+                            <hr>
+                            <h5>Intercesion y Oracion</h5>
+                            <p>Somos un grupo de Mujeres apasionadas por la Oración</p>
                         </div>
 
                     </div>
@@ -901,12 +901,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <form action="https://formsubmit.co/cfmendoza.audit@gmail.com" method="POST"
+                                <form action="https://formsubmit.co/tmolina112@gmail.com" method="POST"
                                     class="p-lg-5 col-12 row g-3">
                                     <div>
                                         <h1>Contactanos</h1>
-                                        <p>Ingresa tus datos y dejanos un mensaje, te responderemos lo mas pronto
-                                            posible!</p>
+                                        <p>Mujer en Dirección te ayuda a conectarte con cientos de personas que adoran a Dios y desean ser felices cumpliendo su voluntad, conéctate con nosotras y comienza una nueva vida hoy!</p>
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="userName" class="form-label">Nombre</label>
@@ -966,31 +965,31 @@
     <script src="./build/js/intlTelInput.js"></script>
     <script>
         const input = document.querySelector("#phone");
-            const iti = window.intlTelInput(input, {
-              nationalMode: false,
-              utilsScript: "./build/js/utils.js",
-              allowDropdown: true,
-            });
-          
-            // Set the initial dial code to +33
-            iti.setNumber("+1");
-          
-            // Make the input field not clickable (remove the down arrow icon)
-            const arrow = document.querySelector(".iti__flag-container > .arrow");
-            arrow.style.display = "none";
-          
-            // Change the flag on click event
-            const countryCode = document.querySelector(".iti__selected-dial-code ");
-            const countryFlag = document.querySelector(".iti__flag-container > .iti__flag");
-            const phoneNumberInput = document.getElementById("phoneNumber");
-          
-            countryFlag.addEventListener("click", function () {
-              const dialCode = countryCode.innerText;
-              iti.setCountry(dialCode.trim());
-          
-              // Add a space after the country code in the input field
-              phoneNumberInput.value = phoneNumberInput.value.replace(/^\+\d*/, `+${dialCode} `);
-            });
+        const iti = window.intlTelInput(input, {
+            nationalMode: false,
+            utilsScript: "./build/js/utils.js",
+            allowDropdown: true,
+        });
+
+        // Set the initial dial code to +33
+        iti.setNumber("+1");
+
+        // Make the input field not clickable (remove the down arrow icon)
+        const arrow = document.querySelector(".iti__flag-container > .arrow");
+        arrow.style.display = "none";
+
+        // Change the flag on click event
+        const countryCode = document.querySelector(".iti__selected-dial-code ");
+        const countryFlag = document.querySelector(".iti__flag-container > .iti__flag");
+        const phoneNumberInput = document.getElementById("phoneNumber");
+
+        countryFlag.addEventListener("click", function () {
+            const dialCode = countryCode.innerText;
+            iti.setCountry(dialCode.trim());
+
+            // Add a space after the country code in the input field
+            phoneNumberInput.value = phoneNumberInput.value.replace(/^\+\d*/, `+${dialCode} `);
+        });
     </script>
 
 </body>
